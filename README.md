@@ -14,14 +14,18 @@ so let's begin.
 # 1. add cert Paramete to request
    to use public key certificate,
    you must have three cert already.
+   
    应用公钥证书 app_public_key_cert
+   
    支付宝公钥证书 alipay_public_key_cert
+   
    支付宝根证书 alipay_root_cert
    
    then add cert Paramete to alipay request
    
-   ×××request.app_cert_sn = self.cert.app_cert_sn
-   ×request.alipay_root_cert_sn = self.cert.alipay_root_cert_sn
+   request.app_cert_sn = self.cert.app_cert_sn
+
+   request.alipay_root_cert_sn = self.cert.alipay_root_cert_sn
    
    you can get SN from alipayCert.py
    
